@@ -1,0 +1,79 @@
+---
+import Image from "astro/components/Image.astro"
+import SocialMedia from "./SocialMedia.astro"
+import GithubIcon from "./icons/Github.astro"
+import TwitterIcon from "./icons/Twitter.astro"
+
+import logo from "../../public/images/logo.png"
+---
+
+<article id ="home" class="home">
+  <div>
+    <Image class="home__image" src={logo} alt="logo">
+  </div>
+  <div class="home__info">
+    <h1 class="home__info-name">David Muñoz</h1>
+    <h2 class="home__info-subtitle purple_color">Software Developer</h2>
+    <p class="home__info-aboutme"><span class="purple_color">Full Stack Developer & Minecraft Developer</span>, 
+    currently <span class="purple_color">freelancing</span> on various projects</p>
+    <div class="home__icons">
+      <SocialMedia href="https://github.com/wckq">
+        <GithubIcon/>
+      </SocialMedia>
+      <SocialMedia href="https://github.com/wckq">
+        <TwitterIcon />
+      </SocialMedia>
+    </div>
+  </div>
+</article>
+
+<style>
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 60vh;
+  }
+  .home__image {
+    width: 200px;
+    border-radius: 100%;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  .home__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 290px;
+    height: auto;
+  }
+
+  .home__info-name {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .home__info-subtitle {
+    margin-top: 0;
+    font-size: 24px;
+  }
+
+  .home__info-aboutme {
+    margin-top: 0;
+    font-size: 14px;
+  }
+
+  .home__icons {
+    display: flex;
+    justify-self: flex-start;    
+  }
+
+  .purple_color {
+    color: #968DFF;
+  }
+</style>

@@ -1,0 +1,42 @@
+---
+interface Project {
+  title: string,
+  subtitle: string,
+  sourceCode: string,
+  moreInfo: string
+}
+
+const projects: Project[] = [
+  {
+    title: "UHCHealthDark",
+    subtitle: "A minecraft project for modality UHC",
+    sourceCode: "",
+    moreInfo: ""
+  }
+]
+---
+
+<article class="projects">
+  <div class="projects__title">
+    <h2 class="projects__title-text">Projects</h2>
+  </div>
+</article>
+
+<style>
+  .projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .projects__title {
+    display: flex;
+    width: 290px;
+    margin-top: 30px;
+    height: auto;
+  }
+  
+  .projects__title-text {
+    font-size: 28px;
+  }
+</style>

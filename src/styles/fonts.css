@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Onest Variable";
+  src: url("/fonts/Onest-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+}
+
+
+@font-face {
+  font-family: "Onest Variable";
+  src: url("/fonts/Onest-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Onest Variable";
+  src: url("/fonts/Onest-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Onest Variable";
+  src: url("/fonts/Onest-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+}

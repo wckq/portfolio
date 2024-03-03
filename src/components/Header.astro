@@ -1,0 +1,51 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+---
+
+<header>
+  <nav class="navbar">
+    <ul class="navbar__items">
+      <li class="navbar__items-item">
+        <HeaderLink class="navbar__items-item-link" href="#home">
+          Home
+        </HeaderLink></li>
+      <li class="navbar__items-item">
+        <HeaderLink class="navbar__items-item-link" href="#projects">
+          Projects
+        </HeaderLink>
+      </li>
+      <li class="navbar__items-item">
+        <HeaderLink class="navbar__items-item-link" href="#skills">
+          Skills
+        </HeaderLink>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar__items {
+    display: flex;
+  }
+
+  .navbar__items-item {
+    margin-inline: 38px;
+    list-style: none;
+  }
+
+  .navbar__items-item-link {
+    font-size: 21px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navbar__items-item-link:hover {
+    color: #d7d3d3;
+  }
+</style>

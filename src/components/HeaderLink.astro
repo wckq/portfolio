@@ -1,0 +1,16 @@
+---
+interface Props {
+  href: string
+  class?: string,
+  restOfProps?: string[]
+}
+
+const { href, class: className, ...restOfProps }= Astro.props;
+---
+
+<a 
+  class={className} 
+  href={href}
+  {...restOfProps}>
+  <slot />
+</a>
